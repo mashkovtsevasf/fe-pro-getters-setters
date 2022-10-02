@@ -21,3 +21,18 @@ export const school = {
     7: new Student('Ivan', [76, 89, 78, 98, 98, 99, 89, 96]),
   },
 };
+ 
+const school = {
+  get aGradeStudents() {
+    return school.filter((student) => (student.grades >= 100 && student.grades <= 90));
+  },
+  get bGradeStudents() {
+    return school.filter((student) => (student.grades >= 89 && student.grades <= 75));
+  },
+  get cGradeStudents() {
+    return school.filter((student) => (student.grades >= 75 && student.grades <= 60));
+  },
+  get dGradeStudents() {
+    return school.filter((student) => (student.grades >= 59 && student.grades <= 0));
+  }
+}
