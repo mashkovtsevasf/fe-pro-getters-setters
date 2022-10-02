@@ -21,15 +21,15 @@ export const school = {
     7: new Student('Ivan', [76, 89, 78, 98, 98, 99, 89, 96]),
   },
   get aGradeStudents() {
-    return school.filter((student) => (student.grades >= 100 && student.grades <= 90));
+    return school.filter((student) => (student.grades >= 100 && student.grades <= 90).join(', '));
   },
   get bGradeStudents() {
-    return school.filter((student) => (student.grades >= 89 && student.grades <= 75));
+    return school.filter((student) => (student.grades >= 89 && student.grades <= 75).join(', '));
   },
   get cGradeStudents() {
-    return school.filter((student) => (student.grades >= 75 && student.grades <= 60));
+    return school.filter((student) => (student.grades >= 75 && student.grades <= 60).join(', '));
   },
   get dGradeStudents() {
-    return school.filter((student) => (student.grades >= 59 && student.grades <= 0));
+    return school.filter((student) => (student.grades >= 59 && student.grades <= 0).join(', '));
   }
 };
