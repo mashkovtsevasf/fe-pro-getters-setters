@@ -20,9 +20,6 @@ export const school = {
     6: new Student('Eugene', [97, 34, 78, 85, 98, 65]),
     7: new Student('Ivan', [76, 89, 78, 98, 98, 99, 89, 96]),
   },
-};
- 
-const school = {
   get aGradeStudents() {
     return school.filter((student) => (student.grades >= 100 && student.grades <= 90));
   },
@@ -35,4 +32,4 @@ const school = {
   get dGradeStudents() {
     return school.filter((student) => (student.grades >= 59 && student.grades <= 0));
   }
-}
+};
